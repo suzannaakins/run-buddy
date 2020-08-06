@@ -188,3 +188,29 @@ section {
 .steps span {
     font-size: 38px;
 }
+
+/* What You Do "Steps" Section Style End */
+
+/* Meet the Trainers Section Style Begin */
+
+.trainers {
+    text-align: center;
+}
+.trainer {
+    width: 900px;
+    margin: 0 auto 30px auto;
+    background: #024e76;
+    color: #fce138;
+    overflow: auto;
+}
+.trainer img {
+    width: 35%;
+    float: left;
+}
+.trainer-bio {
+    padding: 35px;
+    float: left;
+    width: 65%;
+}
+
+/* Meet the Trainers Section Style End */
