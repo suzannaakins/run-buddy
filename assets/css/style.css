@@ -81,23 +81,39 @@ section {
 /* Hero Style Start */
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-/* Hero Style End */
+
+/* CTA (call to action) Style Start */
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+}
+
+/* CTA Style End */
 
 /* Hero Form Style Start */
 .hero-form {
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     color: #024e76;
     border: solid 2px #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    width: 40%;
+    margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -131,6 +147,8 @@ section {
     font-size: 16px;
 }
 /* Hero Form Style End */
+
+/* Hero Style End */
 
 /* What We Do "Intro" Section Style Begin */
 
