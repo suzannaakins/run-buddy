@@ -335,6 +335,11 @@ section {
     grid-row: 1 / -1;
 }
 
+.grid-head, .grid-price, .service-grid-item.cancel {
+    font-size: 1,5rem;
+    font-weight: bold;
+}
+
 /* Reach Out Styles Start */
 
 .contact {
