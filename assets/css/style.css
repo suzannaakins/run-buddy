@@ -284,9 +284,9 @@ section {
     font-size: 17px;
 }
 
-/* Meet the Trainers Section Style End */
+/* Meet the Trainers Section Style END */
 
-/* "Our Service Plans" Style BEGIN */
+/* "Our Service Plans" Style Section BEGIN */
 .services {
     background: #fce138
 }
@@ -298,7 +298,7 @@ section {
 }
 
 
-/* CSS Grid Style for "Service Plans" Table Begin */
+/* CSS Grid Style for "Service Plans" Table BEGIN */
 
 .service-grid-container {
     background: lightyellow;
@@ -340,7 +340,9 @@ section {
     font-weight: bold;
 }
 
-/* Reach Out Styles Start */
+/* CSS Grid Style for "Service Plans" Table END */
+
+/* Reach Out Styles START */
 
 .contact {
     background-color: #024e76;
@@ -487,6 +489,24 @@ section {
     .step-text {
         flex: 100%;
     }
+
+    .service-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-grid-item.basic {
+        grid-column: 1;
+    }
+
+    .service-grid-item.both {
+        grid-column: 1 / -1;
+    }
+
+    .service-grid-item.cancel {
+        transform: none;
+        writing-mode: unset;
+        grid-column: 1 /-1;
+        grid-row: -1;
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
