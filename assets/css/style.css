@@ -16,6 +16,14 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
 /* apply styles to <header> */
 header {
     padding: 20px 35px;
@@ -399,7 +407,7 @@ section {
     top: 0;
 }
 
-.trainer h3 {
+.trainer-img h3 {
     font-size: 25px;
     position: relative;
     z-index: 5;
@@ -408,7 +416,7 @@ section {
     transition-duration: 0.6s;
 }
 
-.trainer h4 {
+.trainer-img h4 {
     font-weight: lighter;
     font-size: 20px;
     margin-bottom: 15px;
@@ -423,12 +431,16 @@ section {
     line-height: 1.3;
 }
 
-.text-left {
-    text-align: left;
+.trainer-bio h3 {
+    font-size: 28px;
+    display: none;
 }
 
-.text-right {
-    text-align: right;
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+    display: none;
 }
 
 .trainer-bio p {
@@ -672,7 +684,25 @@ section {
         writing-mode: unset;
         grid-column: 1 /-1;
         grid-row: -1;
-  }
+    }
+
+    .trainer-img h3, .trainer-img h4, .trainer-img::after {
+        display: none;
+    }
+    
+    .trainer-bio h3 {
+        font-size: 28px;
+        display: block;
+    }
+    
+    .trainer-bio h4 {
+        font-weight: lighter;
+        font-size: 22px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+}
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
