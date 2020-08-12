@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <title>Run Buddy</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <meta name="viewport" content="width=device-width, intial-scale=1.0" />
     </head>
    
     <body>
@@ -27,6 +28,9 @@
                         <a href="#your-trainers">Your Trainers</a>
                     </li>
                     <li>
+                        <a href="#service-plans">Service Plans</a>
+                    </li>
+                    <li>
                         <a href="#reach-out">Reach Out</a>
                     </li>
                 </ul>
@@ -35,6 +39,12 @@
 
         <!--hero/jumbotron-->
         <section class="hero">
+            <div class="hero-cta">
+                    <h2>Start Building Habits.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, molestiae modi itaque saepe nobis repudiandae? Nobis cum natus ab incidunt totam ratione corporis amet alias rerum nemo. Doloribus, iure repudiandae.
+                </p>
+            </div>
             <div class="hero-form">
                 <h3>Get Started Today!</h3>
                 <p>Fill out this form and one of our trainers will schedule a consult.</p>
@@ -49,21 +59,28 @@
                     <!--Phone Number-->
                     <label for="phone">Enter a telephone number:</label>
                     <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
+                    
                     <!--Trainer Radio Button-->
                     <p>
                         Have you worked out with a trainer before?
-                        <input type="radio" name="trainer-confirm" id="trainer-yes" />
-                        <label for="trainer-yes">Yes</label>
-                        <input type="radio" name="trainer-confirm" id="trainer-no" />
-                        <label for="trainer-no">No</label>
+                        <span class="radio-wrapper">
+                            <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                            <label for="trainer-yes">Yes</label>
+                        </span>
+                        <span class="radio-wrapper">
+                            <input type="radio" name="trainer-confirm" id="trainer-no" />
+                            <label for="trainer-no">No</label>
+                        </span>
                     </p>
+                    
                     <!--Age Confirmation Checkbox-->
                     <p>
-                        <label for="checkbox" >
-                            I acknowledge that I am at least 18 years of age.
-                        </label>
-                        <input type="checkbox" name="age-confirm" id="checkbox" />
+                        <span class="checkbox-wrapper">
+                            <input type="checkbox" name="age-confirm" id="checkbox" />
+                            <label for="checkbox" >I acknowledge that I am at least 18 years of age.</label>
+                        </span>
                     </p>
+                    
                     <!--Submit Button-->
                     <button type="submit">
                         Get running!
@@ -75,108 +92,232 @@
 
         <!--"what we do" section-->
         <section id="what-we-do" class="intro">
-            <h2 class="section-title primary-border">What We Do</h2>
-            <p>
-                butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
-            </p>
+            <div class="flex-row">
+                <h2 class="section-title primary-border">What We Do</h2>
+            </div>
+            <div class="flex-row">
+                <p>
+                    butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+                </p>
+            </div>
         </section>
 
         <!--"what you do" section-->
         <section id="what-you-do" class="steps">
-            <h2 class="section-title secondary-border">What You Do</h2>
-
-            <div>
-                <!--Add Step 1 Image-->
-                <img src="./assets/images/step-1.svg" alt="" />
-                <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
-                <p>You're already here, so why not?</p>
+            <div class="flex-row">
+                <h2 class="section-title secondary-border">What You Do</h2>
+            </div>
+            <div class="step">
+                <h3>Step 1.</h3>
+                <div class="step-info">
+                    <div class="step-image">
+                        <img src="./assets/images/step-1.svg" alt="" />
+                    </div>
+                    <div class="step-text">
+                        <h4>Fill Out the Form Above.</h4>
+                        <p>You're already here, so why not?</p>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <img src="./assets/images/step-2.svg" alt="" />
-                <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
-                <p>Are you here to build muscle, lose weight, or just feel good?</p>
+            <div class="step">
+                <h3>Step 2.</h3>
+                <div class="step-info">
+                    <div class="step-image">
+                        <img src="./assets/images/step-2.svg" alt="" />
+                    </div>
+                    <div class="step-text">
+                        <h4>Consult with One of Our Trainers.</h4>
+                        <p>Are you here to build muscle, lose weight, or just feel good?</p>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <img src="./assets/images/step-3.svg" alt="" />
-                <h3>Step 3: <span>Get Running.</span></h3>
-                <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+            <div class="step">
+                <h3>Step 3.</h3>
+                <div class="step-info">
+                    <div class="step-image">
+                        <img src="./assets/images/step-3.svg" alt="" />
+                    </div>
+                    <div class="step-text">
+                        <h4>Get Running.</h4>
+                        <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <img src="./assets/images/step-4.svg" alt="" />
-                <h3>Step 4: <span>See Results.</span></h3>
-                <p>Bi-weekly check-ins with your trainer will keep you focused.</p>
+            <div class="step">
+                <h3>Step 4.</h3>
+                <div class="step-info">
+                    <div class="step-image">
+                        <img src="./assets/images/step-4.svg" alt="" />
+                    </div>
+                    <div class="step-text">
+                        <h4>See Results.</h4>
+                        <p>Bi-weekly check-ins with your trainer will keep you focused.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!--"meet the trainers" section-->
-        <section id="your-trainers" class="trainers">
-            <h2 class="section-title primary-border">Meet the Trainers</h2>
+        <section id="your-trainers">
+            <div class="flex-row">
+                <h2 class="section-title primary-border">Meet the Trainers</h2>
+            </div>
+
+            <div class="trainers">
             <!--First Trainer Bio-->
             <article class="trainer">
-                <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
-                <div class="trainer-bio text-left">
-                    <h3>Arron Stephens</h3>
-                    <h4>Speed / Strength</h4>
-                    <p>
+                    <div class="trainer-img trainer-1" aria-label="Aaron Stephens gives a friendly smile at the gym">
+                        <div>
+                            <h3>Arron Stephens</h3>
+                            <h4>Speed / Strength</h4>
+                        </div>
+                    </div>
+                    <div class="trainer-bio">
+                        <h3>Arron Stephens</h3>
+                        <h4>Speed / Strength</h4>
+                        <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quia ex minima placeat eius nam, expedita rerum ipsa repellendus magni unde, quos neque impedit laudantium dolores sequi voluptatum praesentium. Itaque!
-                    </p>
-                </div>
+                        </p>
+                    </div>
             </article>
 
              <!--Second Trainer Bio-->
              <article class="trainer">
-                <div class="trainer-bio text-right">
+                <div class="trainer-img trainer-2" aria-label="Joanna Gill gives a sly smile">
+                    <div>
+                        <h3>Joanna Gill</h3>
+                        <h4>Endurance</h4>
+                    </div>
+                </div>
+                <div class="trainer-bio">
                     <h3>Joanna Gill</h3>
                     <h4>Endurance</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut porro modi voluptas facere accusamus dignissimos. Nisi laborum voluptatem dolore recusandae dicta, autem quo esse consectetur sed fugiat ratione. Ipsum, et!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quia ex minima placeat eius nam, expedita rerum ipsa repellendus magni unde, quos neque impedit laudantium dolores sequi voluptatum praesentium. Itaque!
                     </p>
                 </div>
-                <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
             </article>
 
             <!--Third Trainer Bio-->
             <article class="trainer">
-                <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
-                <div class="trainer-bio text-left">
+                <div class="trainer-img trainer-3" aria-label="Harry wears a white sweatband on his forehead and lifts 1 pounds pink dumbdells. He's straining.">
+                    <div>
+                        <h3>Harry "The Headband" Smith</h3>
+                        <h4>Strength</h4>
+                    </div>
+                </div>
+                <div class="trainer-bio">
                     <h3>Harry "The Headband" Smith</h3>
-                    <h4>Strength</h4>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quidem iste iusto aliquam, in repellendus autem, suscipit libero ipsam non totam. Incidunt blanditiis iure, libero quod numquam dolores? Architecto, aliquid?
-                    </p>
+                    <h4>Strench</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quia ex minima placeat eius nam, expedita rerum ipsa repellendus magni unde, quos neque impedit laudantium dolores sequi voluptatum praesentium. Itaque!
+                </p>
                 </div>
             </article>
+            </div>
         </section>
+        
+        <!--Out Service Plans Section: CSS Grid Table -->
+        <section id="service-plans" class="services">
 
+            <h2 class="section-title secondary-border">
+                Our Service Plans
+            </h2>
+            <div class="service-grid-wrapper">
+                <div class="service-grid-container">
+                    <!--Headers-->
+                    <div class="service-grid-item grid-head basic">
+                        Basic
+                    </div>
+                    <div class="service-grid-item grid-head premium">
+                        Premium
+                    </div>
+
+                    <!--Body-->
+                    <div class="service-grid-item basic">
+                        Support Offered Between 9-5
+                    </div>
+                    <div class="service-grid-item premium">
+                        24/7 Plan Support
+                    </div>
+                    <div class="service-grid-item basic">
+                        Bi-Weekly Trainer Calls
+                    </div>
+                    <div class="service-grid-item premium">
+                        Weekly Trainer Calls
+                    </div>
+                    <div class="service-grid-item basic">
+                        N/A
+                    </div>
+                    <div class="service-grid-item premium">
+                        Discounts at Select Running Stores
+                    </div>
+                    <div class="service-grid-item both">
+                        Subscription to Run Buddy's Health Magazine!
+                    </div>
+                    <div class="service-grid-item grid-price basic">
+                        $10/mo
+                    </div>
+                    <div class="service-grid-item grid-price premium">
+                        $25/mo
+                    </div>
+
+                    <div class="service-grid-item cancel">
+                        Cancel at Any Time!
+                    </div>
+
+                </div> <!--div service-grid-container-->
+            </div> <!--div service-grid-wrapper-->
+                
+        </section>
 
         <!--"reach out" section-->
         <section id="reach-out" class="contact">
-            <h2 class="section-title secondary-border">Reach Out</h2>
+            <div class="flex-row">
+                <h2 class="section-title secondary-border">Reach Out</h2>
+            </div>
+
             <div class="contact-info">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.6375929043156!2d-120.42432112565484!3d37.954874684604235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8090c46e315aaf1b%3A0xb32d2fcd2023b726!2sMain%20St%2C%20Jamestown%2C%20CA%2095327!5e0!3m2!1sen!2sus!4v1596701044092!5m2!1sen!2sus" 
-                frameborder="0" 
-                style="border:0;" 
-                allowfullscreen="" 
-                aria-hidden="false"
-                tabindex="0">
-                </iframe>
+                
                 <div>
                     <h3>Run Buddy</h3>
                     <p>
-                        Any questions or concerns before signing up?<br />
+                        Any questions or concerns before signing up?
+                        <br/>
                         Let us know and we'll be happy to talk to you!      
                     </p>
+
                     <address>
                     55 Main Street<br>
                     Some Town, CA<br>
                     12345<br>
                     P: 555.RUN.BUDZ (555.768.2839)<br>
-                    E: <a href="mailto: info@runbuddy.io">info@runbuddy.io<info@runbuddy.io</a>
+                    E: <a href="mailto: info@runbuddy.io">info@runbuddy.io</a>
                     </address>
                 </div>
+
+                <div class="contact-form">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" placeholder="Your Name" />
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.6375929043156!2d-120.42432112565484!3d37.954874684604235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8090c46e315aaf1b%3A0xb32d2fcd2023b726!2sMain%20St%2C%20Jamestown%2C%20CA%2095327!5e0!3m2!1sen!2sus!4v1596701044092!5m2!1sen!2sus" 
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    aria-hidden="false"
+                    tabindex="0">
+                </iframe>
+
             </div>
         </section>
 
